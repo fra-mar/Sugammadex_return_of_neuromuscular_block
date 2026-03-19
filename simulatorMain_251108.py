@@ -94,7 +94,7 @@ for i in range(nSub):
     if "fixed" in s.d0SUG:
         d0SUG = float(s.d0SUG[5:]) / s.BW
     elif s.d0SUG == "var":
-        d0SUG = 2.0 if lastTOFr > 10 else 4.0
+        d0SUG = 2.0 if lastTOFr > 14 else 4.0
     else:
         print('found nothing about SUG dose')
     
