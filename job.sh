@@ -1,12 +1,12 @@
 #!/bin/bash
 
-#SBATCH -A uppmax2025-2-378
+#SBATCH -A xxxxxxxxxxxx # Your Uppmax project
 #SBATCH -t 05:00:00
 #SBATCH -p pelle 
 #SBATCH -c 16 
  
-module load Python/3.12.3-GCCcore-13.3.0
-module load R/4.5.1 
+#module load Python/3.12.3-GCCcore-13.3.0 # Uncomment for Uppmax environment
+#module load R/4.5.1                      # Uncomment for Uppmax environment
 
 rm -rf simulations
 rm -rf outputs
@@ -25,7 +25,7 @@ for i in $(seq 0 $(($n - 2)))
 do
   echo ------------------------------
 	echo $i
-	python simulatorMain_251108.py $i 10000
+	python simulatorMain_251108.py $i 10000 # Number of simulations. If not high performace enviroment, <1500 recommended.
 	date
 done
 
