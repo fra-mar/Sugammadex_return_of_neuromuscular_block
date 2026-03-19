@@ -1,0 +1,13 @@
+sceName,AGE,BW,CR,RAC,SEV,d0ROC,infROC,infDur,d0SUG
+A,40,70,100,nonAsian,TRUE,0.6,0,1.5,var
+B,40,70,100,nonAsian,TRUE,0.6,0.3,2,var
+C,54,60,100,Asian,TRUE,0.83,0.5,3.77,fixed240
+D,59,63,100,Asian,TRUE,0.79,0.38,5.6,fixed250
+E,62,79,80,nonAsian,TRUE,0.6,0.3,3,fixed200
+F,62,79,80,nonAsian,TRUE,0.6,0.3,3,var
+G,62,79,80,nonAsian,TRUE,0.6,0.6,3,fixed200
+H,62,79,80,nonAsian,TRUE,0.6,0.6,3,var
+I,62,79,80,nonAsian,TRUE,0.6,0.6,5,fixed200
+J,62,79,80,nonAsian,TRUE,0.6,0.6,5,var
+K,62,79,80,nonAsian,TRUE,0.6,0.6,7,fixed200
+L,62,79,80,nonAsian,TRUE,0.6,0.6,7,var
