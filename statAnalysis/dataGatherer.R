@@ -7,12 +7,12 @@ if (exists('adf')){rm(adf)}
 if (exists('params')){rm(params)}
 
 # Check if data exists, otherwise create it
-dataSourceDir = '/proj/bayesian_240701/recur251109'
+dataSourceDir = [yourPROJECTdirectory]
 
 if (!('mydata.csv' %in% list.files())) {
   
   print('Datafile doesnt exist. Creating it')
-  targetScen = c('G', 'H', 'I' , 'J', 'K', 'L')
+  targetScen = c('G', 'H', 'I' , 'J', 'K', 'L') # Scenarios to be joined and analyzed
   
   setwd(dataSourceDir)
   scenarios = tibble(read.csv('scenarios.csv'))
@@ -56,7 +56,7 @@ if (!('mydata.csv' %in% list.files())) {
   }
 
   
-  setwd('/proj/bayesian_240701/recur251109/statAnalysis')
+  setwd('[yourPROJECTdirectory]/statAnalysis')
   
   mydata = tibble(cbind(tibble(adf), params)) |> 
     mutate( #rSUGamt is rate sugammadex dose to remaining roc in A1 and A2
